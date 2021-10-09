@@ -1,0 +1,12 @@
+{
+  "name": "xcx-numberbank",
+  "version": "0.0.0",
+  "private": "true",
+  "scripts": {
+    "register": "npx xcratch-register --link -C --id=xcxNumberbank --gui=\"../scratch-gui\"",
+    "build": "npx xcratch-build --module=xcxNumberbank --gui=\"../scratch-gui\""
+  },
+  "devDependencies": {
+    "eslint-config-scratch": "^7.0.0"
+  }
+}
