@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": "true",
   "scripts": {
-    "register": "npx xcratch-register --link -C --id=xcxNumberbank --gui=\"../scratch-gui\"",
-    "build": "npx xcratch-build --module=xcxNumberbank --gui=\"../scratch-gui\""
+    "register": "npx xcratch-register --link -C --id=numberbank --gui=\"../scratch-gui\"",
+    "build": "npx xcratch-build --module=numberbank --gui=\"../scratch-gui\""
   },
   "devDependencies": {
     "eslint-config-scratch": "^7.0.0"
