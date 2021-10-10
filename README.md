@@ -1,4 +1,4 @@
-# NumberBank
+# PaSoRich
 An example extension for [Xcratch: Extendable Scratch3 Programming Environment](https://xcratch.github.io/)
 
 This extension add extra-block "do it", that executes string in its input field as a sentence in Javascript and return the result.
@@ -6,8 +6,8 @@ This extension add extra-block "do it", that executes string in its input field 
 
 ## ✨ What You Can Do With This Extension
 
-Play [Example Project](https://xcratch.github.io/editor/#https://con3office.github.io/xcx-numberbank/projects/example.sb3) to look at what you can do with "NumberBank" extension. 
-<iframe src="https://xcratch.github.io/editor/player#https://con3office.github.io/xcx-numberbank/projects/example.sb3" width="540px" height="460px"></iframe>
+Play [Example Project](https://xcratch.github.io/editor/#https://con3office.github.io/xcx-pasorich/projects/example.sb3) to look at what you can do with "NumberBank" extension. 
+<iframe src="https://xcratch.github.io/editor/player#https://con3office.github.io/xcx-pasorich/projects/example.sb3" width="540px" height="460px"></iframe>
 
 
 ## How to Use in Xcratch
@@ -18,7 +18,7 @@ This extension can be used with other extension in [Xcratch](https://xcratch.git
 3. Select 'Extension Loader' extension
 4. Type the module URL in the input field 
 ```
-https://con3office.github.io/xcx-numberbank/dist/xcxNumberbank.mjs
+https://con3office.github.io/xcx-pasorich/dist/pasorich.mjs
 ```
 
 ## Development
@@ -50,9 +50,9 @@ npm install
 
 ## 🏠 Home Page
 
-Open this page from [https://con3office.github.io/xcx-numberbank/](https://con3office.github.io/xcx-numberbank/)
+Open this page from [https://con3office.github.io/xcx-pasorich/](https://con3office.github.io/xcx-pasorich/)
 
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/con3office/xcx-numberbank/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/con3office/xcx-pasorich/issues). 
