@@ -1,10 +1,10 @@
 {
-  "name": "xcx-numberbank",
+  "name": "xcx-pasorich",
   "version": "0.0.0",
   "private": "true",
   "scripts": {
-    "register": "npx xcratch-register --link -C --id=numberbank --gui=\"../scratch-gui\"",
-    "build": "npx xcratch-build --module=numberbank --gui=\"../scratch-gui\""
+    "register": "npx xcratch-register --link -C --id=pasorich --gui=\"../scratch-gui\"",
+    "build": "npx xcratch-build --module=pasorich --gui=\"../scratch-gui\""
   },
   "devDependencies": {
     "eslint-config-scratch": "^7.0.0"
