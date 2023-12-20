@@ -1,7 +1,7 @@
 /*
 //
 // PaSoRich for Xcratch
-// 20231220 - 2.0(2001)
+// 20231221 - 2.0(2002)
 //
 //
 */
@@ -70,7 +70,7 @@ let nfcDevices = [];
 let deviceOpening = false;
 let seqNumber = 0 ;
 
-const pasorichVersion = 'PaSoRich 2.0(2001)';
+const pasorichVersion = 'PaSoRich 2.0(2002)';
 
 
 /**
@@ -106,7 +106,7 @@ let extensionURL = 'https://con3code.github.io/xcx-pasorich/dist/pasorich.mjs';
 /**
  * Scratch 3.0 blocks for example of Xcratch.
  */
-class Scratch3Pasorich {
+class Scratch3PasorichBlocks {
 
     /**
      * @return {string} - the name of this extension.
@@ -224,9 +224,6 @@ class Scratch3Pasorich {
 
                 this.getDeviceNumberMenuItems();
                 resolve(isConnect);
-        })
-        .then(() => {
-            
         });
 
     }
@@ -234,7 +231,7 @@ class Scratch3Pasorich {
 
 /*
 
-    readPasori(args) // -> Scratch3Pasorich.prototype.readPasori
+    readPasori(args) // -> Scratch3PasorichBlocks.prototype.readPasori
 
 */
 
@@ -281,7 +278,7 @@ class Scratch3Pasorich {
     
 /*
 
-    whenRead(args, util) // -> Scratch3Pasorich.prototype.whenRead
+    whenRead(args, util) // -> Scratch3PasorichBlocks.prototype.whenRead
 
 */
 
@@ -290,11 +287,11 @@ class Scratch3Pasorich {
      * @returns {object} metadata for this extension and its blocks.
      */
     getInfo () {
-        setupTranslations();
+        this.setupTranslations();
         return {
-            id: Scratch3Pasorich.EXTENSION_ID,
-            name: Scratch3Pasorich.EXTENSION_NAME,
-            extensionURL: Scratch3Pasorich.extensionURL,
+            id: Scratch3PasorichBlocks.EXTENSION_ID,
+            name: Scratch3PasorichBlocks.EXTENSION_NAME,
+            extensionURL: Scratch3PasorichBlocks.extensionURL,
             blockIconURI: blockIcon,
             showStatusButton: false,
             color1: '#608DD3',
@@ -513,7 +510,7 @@ const readPasoriQueue = new AsyncQueue();
 
 
 // 実際のreadPasoriの処理を行う関数
-Scratch3Pasorich.prototype.readPasoriTask = function(args) {
+Scratch3PasorichBlocks.prototype.readPasoriTask = function(args) {
     return new Promise((resolve, reject) => {
         //console.log("readPasoriTask:", args.DEVICE_NUMBER);
         //if (args.DEVICE_NUMBER === '') { resolve('No Device'); }
@@ -608,7 +605,7 @@ Scratch3Pasorich.prototype.readPasoriTask = function(args) {
 
 
 // readPasori関数でpasoriReadCallbackを呼び出し
-Scratch3Pasorich.prototype.readPasori = function(args) {
+Scratch3PasorichBlocks.prototype.readPasori = function(args) {
     if (args.DEVICE_NUMBER <= 0 && args.DEVICE_NUMBER > nfcDevices.length + 1) {return;}
     return readPasoriQueue.enqueue(() => {
         //console.log("readPasori:", args.DEVICE_NUMBER);
@@ -617,7 +614,7 @@ Scratch3Pasorich.prototype.readPasori = function(args) {
 };
 
 
-Scratch3Pasorich.prototype.pasoriReadCallback = function(deviceNo) {
+Scratch3PasorichBlocks.prototype.pasoriReadCallback = function(deviceNo) {
     this.whenReadCountMap.forEach((readList, blockId) => {
         // readListが配列でない場合は新しい配列を割り当てる
         if (!Array.isArray(readList)) {
@@ -630,7 +627,7 @@ Scratch3Pasorich.prototype.pasoriReadCallback = function(deviceNo) {
 
 
 // whenReadCalled関数で、readList配列を参照し、deviceNoを確認
-Scratch3Pasorich.prototype.whenReadCalled = function(blockId, deviceNo) {
+Scratch3PasorichBlocks.prototype.whenReadCalled = function(blockId, deviceNo) {
     let readList = this.whenReadCountMap.get(blockId) || [];
     if (readList.length > 0) {
         // deviceNoがreadListの先頭にある場合、それを削除
@@ -647,7 +644,7 @@ Scratch3Pasorich.prototype.whenReadCalled = function(blockId, deviceNo) {
 
 
 // whenRead関数で、whenReadCalledの戻り値を利用
-Scratch3Pasorich.prototype.whenRead = function(args, util) {
+Scratch3PasorichBlocks.prototype.whenRead = function(args, util) {
     const blockId = util.thread.topBlock;
     const deviceNumber = args.DEVICE_NUMBER;
     //console.log("whenRead:", deviceNumber);
@@ -942,6 +939,6 @@ function hexString(textStr) {
 
 
 export {
-    Scratch3Pasorich as default,
-    Scratch3Pasorich as blockClass
+    Scratch3PasorichBlocks as default,
+    Scratch3PasorichBlocks as blockClass
 };

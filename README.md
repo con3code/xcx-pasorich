@@ -1,7 +1,7 @@
 # PaSoRich 2.0 for Xcratch
 An example extension for [Xcratch: Extendable Scratch3 Programming Environment](https://xcratch.github.io/)
 
-This extension read SmartCard(Felica)'s IDm with PaSoRi.
+This extension read SmartCard(Felica)'s IDm with PaSoRi(RC-S380/RC-S300).
 
 
 ## ✨ What You Can Do With This Extension
