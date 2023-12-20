@@ -2,17 +2,17 @@ var img$2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF0CAIAAABwgtBbA
 
 var img$1 = "data:image/png;base64,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";
 
-var en$1 = {
+var en = {
 	"pasorich.entry.name": "PaSoRich 2.0",
 	"pasorich.entry.description": "Read SmartCard IDm."
 };
-var ja$1 = {
+var ja = {
 	"pasorich.entry.name": "パソリッチ 2.0",
 	"pasorich.entry.description": "ICカードのIDmを読み取る。"
 };
-var translations$1 = {
-	en: en$1,
-	ja: ja$1,
+var translations = {
+	en: en,
+	ja: ja,
 	"ja-Hira": {
 	"pasorich.entry.name": "ぱそりっち 2.0",
 	"pasorich.entry.description": "ICかーどのばんごうをよみとる。"
@@ -60,7 +60,7 @@ var entry = {
   setFormatMessage: function setFormatMessage(formatter) {
     formatMessage$1 = formatter;
   },
-  translationMap: translations$1
+  translationMap: translations
 };
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
@@ -100,14 +100,14 @@ function _classCallCheck(instance, Constructor) {
   }
 }
 
-function _typeof$1(o) {
+function _typeof$1(obj) {
   "@babel/helpers - typeof";
 
-  return _typeof$1 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
-    return typeof o;
-  } : function (o) {
-    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, _typeof$1(o);
+  return _typeof$1 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof$1(obj);
 }
 
 function _toPrimitive(input, hint) {
@@ -149,14 +149,14 @@ var regeneratorRuntime$1 = {exports: {}};
 var _typeof = {exports: {}};
 
 (function (module) {
-  function _typeof(o) {
+  function _typeof(obj) {
     "@babel/helpers - typeof";
 
-    return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
-      return typeof o;
-    } : function (o) {
-      return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-    }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
+    return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+      return typeof obj;
+    } : function (obj) {
+      return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
   }
   module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 })(_typeof);
@@ -167,304 +167,304 @@ var _typeof = {exports: {}};
 
     /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
     module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
-      return e;
+      return exports;
     }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-    var t,
-      e = {},
-      r = Object.prototype,
-      n = r.hasOwnProperty,
-      o = Object.defineProperty || function (t, e, r) {
-        t[e] = r.value;
+    var exports = {},
+      Op = Object.prototype,
+      hasOwn = Op.hasOwnProperty,
+      defineProperty = Object.defineProperty || function (obj, key, desc) {
+        obj[key] = desc.value;
       },
-      i = "function" == typeof Symbol ? Symbol : {},
-      a = i.iterator || "@@iterator",
-      c = i.asyncIterator || "@@asyncIterator",
-      u = i.toStringTag || "@@toStringTag";
-    function define(t, e, r) {
-      return Object.defineProperty(t, e, {
-        value: r,
+      $Symbol = "function" == typeof Symbol ? Symbol : {},
+      iteratorSymbol = $Symbol.iterator || "@@iterator",
+      asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
+      toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+    function define(obj, key, value) {
+      return Object.defineProperty(obj, key, {
+        value: value,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }), t[e];
+      }), obj[key];
     }
     try {
       define({}, "");
-    } catch (t) {
-      define = function define(t, e, r) {
-        return t[e] = r;
+    } catch (err) {
+      define = function define(obj, key, value) {
+        return obj[key] = value;
       };
     }
-    function wrap(t, e, r, n) {
-      var i = e && e.prototype instanceof Generator ? e : Generator,
-        a = Object.create(i.prototype),
-        c = new Context(n || []);
-      return o(a, "_invoke", {
-        value: makeInvokeMethod(t, r, c)
-      }), a;
+    function wrap(innerFn, outerFn, self, tryLocsList) {
+      var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
+        generator = Object.create(protoGenerator.prototype),
+        context = new Context(tryLocsList || []);
+      return defineProperty(generator, "_invoke", {
+        value: makeInvokeMethod(innerFn, self, context)
+      }), generator;
     }
-    function tryCatch(t, e, r) {
+    function tryCatch(fn, obj, arg) {
       try {
         return {
           type: "normal",
-          arg: t.call(e, r)
+          arg: fn.call(obj, arg)
         };
-      } catch (t) {
+      } catch (err) {
         return {
           type: "throw",
-          arg: t
+          arg: err
         };
       }
     }
-    e.wrap = wrap;
-    var h = "suspendedStart",
-      l = "suspendedYield",
-      f = "executing",
-      s = "completed",
-      y = {};
+    exports.wrap = wrap;
+    var ContinueSentinel = {};
     function Generator() {}
     function GeneratorFunction() {}
     function GeneratorFunctionPrototype() {}
-    var p = {};
-    define(p, a, function () {
+    var IteratorPrototype = {};
+    define(IteratorPrototype, iteratorSymbol, function () {
       return this;
     });
-    var d = Object.getPrototypeOf,
-      v = d && d(d(values([])));
-    v && v !== r && n.call(v, a) && (p = v);
-    var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p);
-    function defineIteratorMethods(t) {
-      ["next", "throw", "return"].forEach(function (e) {
-        define(t, e, function (t) {
-          return this._invoke(e, t);
+    var getProto = Object.getPrototypeOf,
+      NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+    NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
+    var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+    function defineIteratorMethods(prototype) {
+      ["next", "throw", "return"].forEach(function (method) {
+        define(prototype, method, function (arg) {
+          return this._invoke(method, arg);
         });
       });
     }
-    function AsyncIterator(t, e) {
-      function invoke(r, o, i, a) {
-        var c = tryCatch(t[r], t, o);
-        if ("throw" !== c.type) {
-          var u = c.arg,
-            h = u.value;
-          return h && "object" == _typeof$1(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) {
-            invoke("next", t, i, a);
-          }, function (t) {
-            invoke("throw", t, i, a);
-          }) : e.resolve(h).then(function (t) {
-            u.value = t, i(u);
-          }, function (t) {
-            return invoke("throw", t, i, a);
+    function AsyncIterator(generator, PromiseImpl) {
+      function invoke(method, arg, resolve, reject) {
+        var record = tryCatch(generator[method], generator, arg);
+        if ("throw" !== record.type) {
+          var result = record.arg,
+            value = result.value;
+          return value && "object" == _typeof$1(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
+            invoke("next", value, resolve, reject);
+          }, function (err) {
+            invoke("throw", err, resolve, reject);
+          }) : PromiseImpl.resolve(value).then(function (unwrapped) {
+            result.value = unwrapped, resolve(result);
+          }, function (error) {
+            return invoke("throw", error, resolve, reject);
           });
         }
-        a(c.arg);
+        reject(record.arg);
       }
-      var r;
-      o(this, "_invoke", {
-        value: function value(t, n) {
+      var previousPromise;
+      defineProperty(this, "_invoke", {
+        value: function value(method, arg) {
           function callInvokeWithMethodAndArg() {
-            return new e(function (e, r) {
-              invoke(t, n, e, r);
+            return new PromiseImpl(function (resolve, reject) {
+              invoke(method, arg, resolve, reject);
             });
           }
-          return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+          return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
         }
       });
     }
-    function makeInvokeMethod(e, r, n) {
-      var o = h;
-      return function (i, a) {
-        if (o === f) throw new Error("Generator is already running");
-        if (o === s) {
-          if ("throw" === i) throw a;
-          return {
-            value: t,
-            done: !0
-          };
+    function makeInvokeMethod(innerFn, self, context) {
+      var state = "suspendedStart";
+      return function (method, arg) {
+        if ("executing" === state) throw new Error("Generator is already running");
+        if ("completed" === state) {
+          if ("throw" === method) throw arg;
+          return doneResult();
         }
-        for (n.method = i, n.arg = a;;) {
-          var c = n.delegate;
-          if (c) {
-            var u = maybeInvokeDelegate(c, n);
-            if (u) {
-              if (u === y) continue;
-              return u;
+        for (context.method = method, context.arg = arg;;) {
+          var delegate = context.delegate;
+          if (delegate) {
+            var delegateResult = maybeInvokeDelegate(delegate, context);
+            if (delegateResult) {
+              if (delegateResult === ContinueSentinel) continue;
+              return delegateResult;
             }
           }
-          if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) {
-            if (o === h) throw o = s, n.arg;
-            n.dispatchException(n.arg);
-          } else "return" === n.method && n.abrupt("return", n.arg);
-          o = f;
-          var p = tryCatch(e, r, n);
-          if ("normal" === p.type) {
-            if (o = n.done ? s : l, p.arg === y) continue;
+          if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
+            if ("suspendedStart" === state) throw state = "completed", context.arg;
+            context.dispatchException(context.arg);
+          } else "return" === context.method && context.abrupt("return", context.arg);
+          state = "executing";
+          var record = tryCatch(innerFn, self, context);
+          if ("normal" === record.type) {
+            if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
             return {
-              value: p.arg,
-              done: n.done
+              value: record.arg,
+              done: context.done
             };
           }
-          "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg);
+          "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
         }
       };
     }
-    function maybeInvokeDelegate(e, r) {
-      var n = r.method,
-        o = e.iterator[n];
-      if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y;
-      var i = tryCatch(o, e.iterator, r.arg);
-      if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y;
-      var a = i.arg;
-      return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y);
+    function maybeInvokeDelegate(delegate, context) {
+      var methodName = context.method,
+        method = delegate.iterator[methodName];
+      if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel;
+      var record = tryCatch(method, delegate.iterator, context.arg);
+      if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
+      var info = record.arg;
+      return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
     }
-    function pushTryEntry(t) {
-      var e = {
-        tryLoc: t[0]
+    function pushTryEntry(locs) {
+      var entry = {
+        tryLoc: locs[0]
       };
-      1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e);
+      1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
     }
-    function resetTryEntry(t) {
-      var e = t.completion || {};
-      e.type = "normal", delete e.arg, t.completion = e;
+    function resetTryEntry(entry) {
+      var record = entry.completion || {};
+      record.type = "normal", delete record.arg, entry.completion = record;
     }
-    function Context(t) {
+    function Context(tryLocsList) {
       this.tryEntries = [{
         tryLoc: "root"
-      }], t.forEach(pushTryEntry, this), this.reset(!0);
+      }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
     }
-    function values(e) {
-      if (e || "" === e) {
-        var r = e[a];
-        if (r) return r.call(e);
-        if ("function" == typeof e.next) return e;
-        if (!isNaN(e.length)) {
-          var o = -1,
-            i = function next() {
-              for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next;
-              return next.value = t, next.done = !0, next;
+    function values(iterable) {
+      if (iterable) {
+        var iteratorMethod = iterable[iteratorSymbol];
+        if (iteratorMethod) return iteratorMethod.call(iterable);
+        if ("function" == typeof iterable.next) return iterable;
+        if (!isNaN(iterable.length)) {
+          var i = -1,
+            next = function next() {
+              for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
+              return next.value = undefined, next.done = !0, next;
             };
-          return i.next = i;
+          return next.next = next;
         }
       }
-      throw new TypeError(_typeof$1(e) + " is not iterable");
+      return {
+        next: doneResult
+      };
     }
-    return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", {
+    function doneResult() {
+      return {
+        value: undefined,
+        done: !0
+      };
+    }
+    return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", {
       value: GeneratorFunctionPrototype,
       configurable: !0
-    }), o(GeneratorFunctionPrototype, "constructor", {
+    }), defineProperty(GeneratorFunctionPrototype, "constructor", {
       value: GeneratorFunction,
       configurable: !0
-    }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) {
-      var e = "function" == typeof t && t.constructor;
-      return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name));
-    }, e.mark = function (t) {
-      return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t;
-    }, e.awrap = function (t) {
+    }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
+      var ctor = "function" == typeof genFun && genFun.constructor;
+      return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
+    }, exports.mark = function (genFun) {
+      return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
+    }, exports.awrap = function (arg) {
       return {
-        __await: t
+        __await: arg
       };
-    }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () {
+    }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
       return this;
-    }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) {
-      void 0 === i && (i = Promise);
-      var a = new AsyncIterator(wrap(t, r, n, o), i);
-      return e.isGeneratorFunction(r) ? a : a.next().then(function (t) {
-        return t.done ? t.value : a.next();
+    }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+      void 0 === PromiseImpl && (PromiseImpl = Promise);
+      var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+      return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
+        return result.done ? result.value : iter.next();
       });
-    }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () {
+    }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
       return this;
-    }), define(g, "toString", function () {
+    }), define(Gp, "toString", function () {
       return "[object Generator]";
-    }), e.keys = function (t) {
-      var e = Object(t),
-        r = [];
-      for (var n in e) r.push(n);
-      return r.reverse(), function next() {
-        for (; r.length;) {
-          var t = r.pop();
-          if (t in e) return next.value = t, next.done = !1, next;
+    }), exports.keys = function (val) {
+      var object = Object(val),
+        keys = [];
+      for (var key in object) keys.push(key);
+      return keys.reverse(), function next() {
+        for (; keys.length;) {
+          var key = keys.pop();
+          if (key in object) return next.value = key, next.done = !1, next;
         }
         return next.done = !0, next;
       };
-    }, e.values = values, Context.prototype = {
+    }, exports.values = values, Context.prototype = {
       constructor: Context,
-      reset: function reset(e) {
-        if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t);
+      reset: function reset(skipTempReset) {
+        if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
       },
       stop: function stop() {
         this.done = !0;
-        var t = this.tryEntries[0].completion;
-        if ("throw" === t.type) throw t.arg;
+        var rootRecord = this.tryEntries[0].completion;
+        if ("throw" === rootRecord.type) throw rootRecord.arg;
         return this.rval;
       },
-      dispatchException: function dispatchException(e) {
-        if (this.done) throw e;
-        var r = this;
-        function handle(n, o) {
-          return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o;
+      dispatchException: function dispatchException(exception) {
+        if (this.done) throw exception;
+        var context = this;
+        function handle(loc, caught) {
+          return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
         }
-        for (var o = this.tryEntries.length - 1; o >= 0; --o) {
-          var i = this.tryEntries[o],
-            a = i.completion;
-          if ("root" === i.tryLoc) return handle("end");
-          if (i.tryLoc <= this.prev) {
-            var c = n.call(i, "catchLoc"),
-              u = n.call(i, "finallyLoc");
-            if (c && u) {
-              if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
-              if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
-            } else if (c) {
-              if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
+        for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+          var entry = this.tryEntries[i],
+            record = entry.completion;
+          if ("root" === entry.tryLoc) return handle("end");
+          if (entry.tryLoc <= this.prev) {
+            var hasCatch = hasOwn.call(entry, "catchLoc"),
+              hasFinally = hasOwn.call(entry, "finallyLoc");
+            if (hasCatch && hasFinally) {
+              if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+              if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+            } else if (hasCatch) {
+              if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
             } else {
-              if (!u) throw new Error("try statement without catch or finally");
-              if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
+              if (!hasFinally) throw new Error("try statement without catch or finally");
+              if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
             }
           }
         }
       },
-      abrupt: function abrupt(t, e) {
-        for (var r = this.tryEntries.length - 1; r >= 0; --r) {
-          var o = this.tryEntries[r];
-          if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) {
-            var i = o;
+      abrupt: function abrupt(type, arg) {
+        for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+          var entry = this.tryEntries[i];
+          if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+            var finallyEntry = entry;
             break;
           }
         }
-        i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null);
-        var a = i ? i.completion : {};
-        return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a);
+        finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
+        var record = finallyEntry ? finallyEntry.completion : {};
+        return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
       },
-      complete: function complete(t, e) {
-        if ("throw" === t.type) throw t.arg;
-        return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y;
+      complete: function complete(record, afterLoc) {
+        if ("throw" === record.type) throw record.arg;
+        return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
       },
-      finish: function finish(t) {
-        for (var e = this.tryEntries.length - 1; e >= 0; --e) {
-          var r = this.tryEntries[e];
-          if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y;
+      finish: function finish(finallyLoc) {
+        for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+          var entry = this.tryEntries[i];
+          if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
         }
       },
-      "catch": function _catch(t) {
-        for (var e = this.tryEntries.length - 1; e >= 0; --e) {
-          var r = this.tryEntries[e];
-          if (r.tryLoc === t) {
-            var n = r.completion;
-            if ("throw" === n.type) {
-              var o = n.arg;
-              resetTryEntry(r);
+      "catch": function _catch(tryLoc) {
+        for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+          var entry = this.tryEntries[i];
+          if (entry.tryLoc === tryLoc) {
+            var record = entry.completion;
+            if ("throw" === record.type) {
+              var thrown = record.arg;
+              resetTryEntry(entry);
             }
-            return o;
+            return thrown;
           }
         }
         throw new Error("illegal catch attempt");
       },
-      delegateYield: function delegateYield(e, r, n) {
+      delegateYield: function delegateYield(iterable, resultName, nextLoc) {
         return this.delegate = {
-          iterator: values(e),
-          resultName: r,
-          nextLoc: n
-        }, "next" === this.method && (this.arg = t), y;
+          iterator: values(iterable),
+          resultName: resultName,
+          nextLoc: nextLoc
+        }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
       }
-    }, e;
+    }, exports;
   }
   module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 })(regeneratorRuntime$1);
@@ -568,68 +568,6 @@ var ArgumentType = {
 };
 var argumentType = ArgumentType;
 
-var en = {
-	"pasorich.name": "PaSoRich",
-	"pasorich.push2Connect": "Push to Connect.",
-	"pasorich.Connect": "Connect",
-	"pasorich.readPasori": "read #[DEVICE_NUMBER]reader",
-	"pasorich.getIdm": "IDm of #[DEVICE_NUMBER]",
-	"pasorich.getHashedIdm": "HexIDm",
-	"pasorich.resetIdm": "reset IDm",
-	"pasorich.resetDevice": "reset Device",
-	"pasorich.whenRead": "when read #[DEVICE_NUMBER]reader",
-	"pasorich.getReadingFlag": "reading",
-	"pasorich.getWaitingFlag": "waiting",
-	"pasorich.readingDone": "reading done",
-	"pasorich.ConnectReading": "reading...",
-	"pasorich.ConnectConnected": "connected...",
-	"pasorich.ConnectConnecting": "connecting...",
-	"pasorich.ConnectSuccess": "connected...",
-	"pasorich.ConnectFailure": "connection failed..."
-};
-var ja = {
-	"pasorich.name": "パソリッチ",
-	"pasorich.push2Connect": "押して接続",
-	"pasorich.Connect": "接続",
-	"pasorich.readPasori": "[DEVICE_NUMBER]番の読み取り",
-	"pasorich.getIdm": "[DEVICE_NUMBER]番のIDm",
-	"pasorich.getHashedIdm": "HexIDm",
-	"pasorich.resetIdm": "IDmリセット",
-	"pasorich.resetDevice": "デバイスリセット",
-	"pasorich.whenRead": "[DEVICE_NUMBER]番が読み取られたとき",
-	"pasorich.getReadingFlag": "読取中",
-	"pasorich.getWaitingFlag": "待機中",
-	"pasorich.readingDone": "読み取り完了",
-	"pasorich.ConnectReading": "読取中...",
-	"pasorich.ConnectConnected": "接続済み...",
-	"pasorich.ConnectConnecting": "接続中...",
-	"pasorich.ConnectSuccess": "接続成功...",
-	"pasorich.ConnectFailure": "接続失敗..."
-};
-var translations = {
-	en: en,
-	ja: ja,
-	"ja-Hira": {
-	"pasorich.name": "ぱそりっち",
-	"pasorich.push2Connect": "おしてせつぞく",
-	"pasorich.Connect": "せつぞく",
-	"pasorich.readPasori": "[DEVICE_NUMBER]ばんのよみとり",
-	"pasorich.getIdm": "[DEVICE_NUMBER]ばんのIDm",
-	"pasorich.getHashedIdm": "HexIDm",
-	"pasorich.resetIdm": "IDmりせっと",
-	"pasorich.resetDevice": "でばいすりせっと",
-	"pasorich.whenRead": "[DEVICE_NUMBER]ばんがよみとられたとき",
-	"pasorich.getReadingFlag": "よみとりちゅう",
-	"pasorich.getWaitingFlag": "たいきちゅう",
-	"pasorich.readingDone": "よみとりかんりょう",
-	"pasorich.ConnectReading": "よみとりちゅう...",
-	"pasorich.ConnectConnected": "せつぞくずみ...",
-	"pasorich.ConnectConnecting": "せつぞくちゅう...",
-	"pasorich.ConnectSuccess": "せつぞくせいこう...",
-	"pasorich.ConnectFailure": "せつぞくしっぱい..."
-}
-};
-
 var img = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAAB65masAAAES0lEQVRYCbWYy07bQBSGJ4QQAmoDCVGgYYHEpkVp1pW6aCVYIWDLCl4AxBJeA4lXKGKFKiEQah+iC4TUbkBCokjcLwnXJnH/33gGZ2rHju2OZHkuPt/8PnM7dkyES4ZmHtPKoYttoQn/GdCSQMMw3l5fX6/i+l2r1aooC+1C0TPVy+XyxdXV1Vc8WYzs/QB7d3d3V15cXKyNjIwYHR0dHN6Wr1gsZgwNDRkLCwtV8sB9G4lIeg7iqkFEudmQB+6XSARiSA6LxWLLHnMTx3ryLi8vDyMRWK1Wn1KpVKQCySM3tEDMk9QfJLs3BgcHjfX1dXoAzc0TFpRxdHRkrK2tGYVCoeElyYV1KpRIAAYvLi4qdoFbW1vNVbm0bm5uNggkl3w3ge1uDVp9BnOQC8RMbW1tYnR01MwvLy8LTHSrxfmGlSt6e3vF/Py8GBsbE7Sv1+vmw+SiLYOC41z0uw9mz8/P+eZmSqfTIplMioeHB09xNICHBDxlPk872stkcbOyrN99Czw9PVXP9vX1mRzsYzqvaZkvxNTT06Oes7jhBR4fH6vpEFYgh1smixuJwKSEhhVo9yAEkhtO4P39fT+GIh6VQLsHyQU/L9n6Xc0rvcFefnx87MdkVlVBPQghJsPuQXLBH1BwLeNLIHb7PFehTEEFOi0ScsmXbP3uSyD2LW4zyjasQPsQk0u+gmsZXwLb29t7oxSoDzH5mi5V9CUQsd/rKATKOah7kHylSMuovU2rV0WcAjFcKQQFqi7sENs9yDmI0yXFfhjMqk6sjB8PpjG5MY/VUSzCCrR7EJEOVzHhL+efTaUfgVl8Q6iYLR6Pmwc/D3s5ZDZe06zTKqbBzc0N+Y4LxZdADG9N9pzJZASjk1bF0d5NoMUPLhC7vdQncrmcmW81UKCRfCn7ELPe4gcWmDk5OVHHXDb7zAkikPONgXlnZ6fo6uqiNjNZfMaE/yRfQ4wDPSEtsSWYWXYWJEk7ySHD4gf2YBZvqCIZwExdXMn0RCspn8+bgS6HGgtDmVp8R4Ge+yBWcOHs7Ez9c9nd3RU7OzuiVCqJpaUl1UkrmdXVVRXy0478SqXyxonhOcSYMw2RDCFTU1Nie3ub+5cT07Xu9vZWrKysiLm5uYZneEo9PT05RjSeHsQOn7MfcyQfHByI8fHxhk7CFMhHP8/fERrI04OINDK6QI0Ruki+W0TjKTCRSKTtsWBoNQ4A8tmPQ5PwFAjX1/CLwsk2sjruiejn5bC3kT0FYt/6Pjk5+fyVbTOMMks+BH4LxITh5729Pf46aPhlEWV5f3//Gv18Ciowhl8bv2ZmZujFyEXOzs7Wwf8JgWqvbVkojEvYw8oQGanA6elpw/rL+t5NlG/VEFnE8bSO0GhgY2MjiZX3fCg7kPGsQ+1LFc7h+sTExO3w8PBNd3f3FMK3Hy+tjTnfAqUZOv+A/Edcr2RdgDtX7C6uLYjjf0fX9BdJ3XDAbDvRmgAAAABJRU5ErkJggg==";
 
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
@@ -691,7 +629,7 @@ var pasoriDevice = {
 var nfcDevices = [];
 var deviceOpening = false;
 var seqNumber = 0;
-var pasorichVersion = 'PaSoRich 2.0(2001)';
+var pasorichVersion = 'PaSoRich 2.0(2002)';
 
 /**
  * Formatter which is used for translation.
@@ -701,16 +639,6 @@ var pasorichVersion = 'PaSoRich 2.0(2001)';
  */
 var formatMessage = function formatMessage(messageData) {
   return messageData.defaultMessage;
-};
-
-/**
- * Setup format-message for this extension.
- */
-var setupTranslations = function setupTranslations() {
-  var localeSetup = formatMessage.setup();
-  if (localeSetup && localeSetup.translations[localeSetup.locale]) {
-    Object.assign(localeSetup.translations[localeSetup.locale], translations[localeSetup.locale]);
-  }
 };
 var EXTENSION_ID = 'pasorich';
 
@@ -724,13 +652,13 @@ var extensionURL = 'https://con3code.github.io/xcx-pasorich/dist/pasorich.mjs';
 /**
  * Scratch 3.0 blocks for example of Xcratch.
  */
-var Scratch3Pasorich = /*#__PURE__*/function () {
+var Scratch3PasorichBlocks = /*#__PURE__*/function () {
   /**
    * Construct a set of blocks for PaSoRich.
    * @param {Runtime} runtime - the Scratch 3.0 runtime.
    */
-  function Scratch3Pasorich(runtime) {
-    _classCallCheck(this, Scratch3Pasorich);
+  function Scratch3PasorichBlocks(runtime) {
+    _classCallCheck(this, Scratch3PasorichBlocks);
     /**
      * The Scratch 3.0 runtime.
      * @type {Runtime}
@@ -747,7 +675,7 @@ var Scratch3Pasorich = /*#__PURE__*/function () {
       formatMessage = runtime.formatMessage;
     }
   }
-  _createClass(Scratch3Pasorich, [{
+  _createClass(Scratch3PasorichBlocks, [{
     key: "openPasori",
     value: function openPasori() {
       var _this = this;
@@ -804,12 +732,12 @@ var Scratch3Pasorich = /*#__PURE__*/function () {
         });
         _this.getDeviceNumberMenuItems();
         resolve(isConnect);
-      }).then(function () {});
+      });
     }
 
     /*
     
-        readPasori(args) // -> Scratch3Pasorich.prototype.readPasori
+        readPasori(args) // -> Scratch3PasorichBlocks.prototype.readPasori
     
     */
   }, {
@@ -885,7 +813,7 @@ var Scratch3Pasorich = /*#__PURE__*/function () {
 
     /*
     
-        whenRead(args, util) // -> Scratch3Pasorich.prototype.whenRead
+        whenRead(args, util) // -> Scratch3PasorichBlocks.prototype.whenRead
     
     */
 
@@ -895,11 +823,11 @@ var Scratch3Pasorich = /*#__PURE__*/function () {
   }, {
     key: "getInfo",
     value: function getInfo() {
-      setupTranslations();
+      this.setupTranslations();
       return {
-        id: Scratch3Pasorich.EXTENSION_ID,
-        name: Scratch3Pasorich.EXTENSION_NAME,
-        extensionURL: Scratch3Pasorich.extensionURL,
+        id: Scratch3PasorichBlocks.EXTENSION_ID,
+        name: Scratch3PasorichBlocks.EXTENSION_NAME,
+        extensionURL: Scratch3PasorichBlocks.extensionURL,
         blockIconURI: img,
         showStatusButton: false,
         color1: '#608DD3',
@@ -1045,7 +973,7 @@ var Scratch3Pasorich = /*#__PURE__*/function () {
       extensionURL = url;
     }
   }]);
-  return Scratch3Pasorich;
+  return Scratch3PasorichBlocks;
 }();
 var AsyncQueue = /*#__PURE__*/function () {
   function AsyncQueue() {
@@ -1226,7 +1154,7 @@ function _setupDevice() {
 var readPasoriQueue = new AsyncQueue();
 
 // 実際のreadPasoriの処理を行う関数
-Scratch3Pasorich.prototype.readPasoriTask = function (args) {
+Scratch3PasorichBlocks.prototype.readPasoriTask = function (args) {
   var _this4 = this;
   return new Promise(function (resolve, reject) {
     //console.log("readPasoriTask:", args.DEVICE_NUMBER);
@@ -1308,7 +1236,7 @@ Scratch3Pasorich.prototype.readPasoriTask = function (args) {
 };
 
 // readPasori関数でpasoriReadCallbackを呼び出し
-Scratch3Pasorich.prototype.readPasori = function (args) {
+Scratch3PasorichBlocks.prototype.readPasori = function (args) {
   var _this5 = this;
   if (args.DEVICE_NUMBER <= 0 && args.DEVICE_NUMBER > nfcDevices.length + 1) {
     return;
@@ -1318,7 +1246,7 @@ Scratch3Pasorich.prototype.readPasori = function (args) {
     return _this5.readPasoriTask(args);
   });
 };
-Scratch3Pasorich.prototype.pasoriReadCallback = function (deviceNo) {
+Scratch3PasorichBlocks.prototype.pasoriReadCallback = function (deviceNo) {
   var _this6 = this;
   this.whenReadCountMap.forEach(function (readList, blockId) {
     // readListが配列でない場合は新しい配列を割り当てる
@@ -1331,7 +1259,7 @@ Scratch3Pasorich.prototype.pasoriReadCallback = function (deviceNo) {
 };
 
 // whenReadCalled関数で、readList配列を参照し、deviceNoを確認
-Scratch3Pasorich.prototype.whenReadCalled = function (blockId, deviceNo) {
+Scratch3PasorichBlocks.prototype.whenReadCalled = function (blockId, deviceNo) {
   var readList = this.whenReadCountMap.get(blockId) || [];
   if (readList.length > 0) {
     // deviceNoがreadListの先頭にある場合、それを削除
@@ -1347,7 +1275,7 @@ Scratch3Pasorich.prototype.whenReadCalled = function (blockId, deviceNo) {
 };
 
 // whenRead関数で、whenReadCalledの戻り値を利用
-Scratch3Pasorich.prototype.whenRead = function (args, util) {
+Scratch3PasorichBlocks.prototype.whenRead = function (args, util) {
   var blockId = util.thread.topBlock;
   var deviceNumber = args.DEVICE_NUMBER;
   //console.log("whenRead:", deviceNumber);
@@ -1692,4 +1620,4 @@ function deviceWaiter(msec) {
   });
 }
 
-export { Scratch3Pasorich as blockClass, entry };
+export { Scratch3PasorichBlocks as blockClass, entry };
