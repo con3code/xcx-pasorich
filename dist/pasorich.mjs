@@ -629,7 +629,7 @@ var pasoriDevice = {
 var nfcDevices = [];
 var deviceOpening = false;
 var seqNumber = 0;
-var pasorichVersion = 'PaSoRich 2.0(2002)';
+var pasorichVersion = 'PaSoRich 2.0(2003)';
 
 /**
  * Formatter which is used for translation.
@@ -1154,13 +1154,13 @@ function _setupDevice() {
 var readPasoriQueue = new AsyncQueue();
 
 // 実際のreadPasoriの処理を行う関数
-Scratch3PasorichBlocks.prototype.readPasoriTask = function (args) {
+Scratch3PasorichBlocks.prototype.readPasoriTask = function (deviceNumber) {
   var _this4 = this;
   return new Promise(function (resolve, reject) {
     //console.log("readPasoriTask:", args.DEVICE_NUMBER);
     //if (args.DEVICE_NUMBER === '') { resolve('No Device'); }
 
-    var deviceNumber = parseInt(args.DEVICE_NUMBER, 10);
+    // const deviceNumber = parseInt(args.DEVICE_NUMBER, 10);
     if (deviceNumber > 0 && deviceNumber <= nfcDevices.length) {
       var device = getNfcDeviceByNumber(deviceNumber);
       //console.log("readOpenPasori:", device);
@@ -1231,22 +1231,23 @@ Scratch3PasorichBlocks.prototype.readPasoriTask = function (args) {
       _this4.getDeviceNumberMenuItems();
     }
   }).then(function () {
-    _this4.pasoriReadCallback(args.DEVICE_NUMBER);
+    _this4.pasoriReadCallback(deviceNumber);
   });
 };
 
 // readPasori関数でpasoriReadCallbackを呼び出し
 Scratch3PasorichBlocks.prototype.readPasori = function (args) {
   var _this5 = this;
-  if (args.DEVICE_NUMBER <= 0 && args.DEVICE_NUMBER > nfcDevices.length + 1) {
+  var deviceNumber = args.DEVICE_NUMBER;
+  if (deviceNumber <= 0 && deviceNumber > nfcDevices.length + 1) {
     return;
   }
   return readPasoriQueue.enqueue(function () {
-    //console.log("readPasori:", args.DEVICE_NUMBER);
-    return _this5.readPasoriTask(args);
+    //console.log("readPasori:", deviceNumber);
+    return _this5.readPasoriTask(deviceNumber);
   });
 };
-Scratch3PasorichBlocks.prototype.pasoriReadCallback = function (deviceNo) {
+Scratch3PasorichBlocks.prototype.pasoriReadCallback = function (deviceNumber) {
   var _this6 = this;
   this.whenReadCountMap.forEach(function (readList, blockId) {
     // readListが配列でない場合は新しい配列を割り当てる
@@ -1254,7 +1255,7 @@ Scratch3PasorichBlocks.prototype.pasoriReadCallback = function (deviceNo) {
       readList = [];
       _this6.whenReadCountMap.set(blockId, readList);
     }
-    readList.push(deviceNo);
+    readList.push(deviceNumber);
   });
 };
 
@@ -1266,7 +1267,7 @@ Scratch3PasorichBlocks.prototype.whenReadCalled = function (blockId, deviceNo) {
     var deviceNumber = readList[0];
     readList.shift();
     this.whenReadCountMap.set(blockId, readList);
-    return deviceNumber === deviceNo;
+    return deviceNumber == deviceNo;
   } else {
     this.whenReadCountMap.set(blockId, readList);
     //console.log("whenReadCalled:", readList);
@@ -1277,9 +1278,9 @@ Scratch3PasorichBlocks.prototype.whenReadCalled = function (blockId, deviceNo) {
 // whenRead関数で、whenReadCalledの戻り値を利用
 Scratch3PasorichBlocks.prototype.whenRead = function (args, util) {
   var blockId = util.thread.topBlock;
-  var deviceNumber = args.DEVICE_NUMBER;
-  //console.log("whenRead:", deviceNumber);
-  return this.whenReadCalled(blockId, deviceNumber);
+  var deviceNo = args.DEVICE_NUMBER;
+  //console.log("whenRead:", deviceNo);
+  return this.whenReadCalled(blockId, deviceNo);
 };
 function send300(_x5, _x6, _x7) {
   return _send.apply(this, arguments);
