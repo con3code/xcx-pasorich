@@ -19,22 +19,25 @@ const vmRefs = [
 console.log(`Using scratch-vm at: ${vmSrcOrg}`);
 
 // Make symbolic link
+// Use a relative link target so the link stays valid when the directory tree
+// is mounted at a different absolute path (e.g. inside a Docker container).
 const makeSymbolicLink = function (to, from) {
+    const relativeTo = path.relative(path.dirname(from), to);
     try {
         const stats = fs.lstatSync(from);
         if (stats.isSymbolicLink()) {
-            if (fs.readlinkSync(from) === to) {
+            if (fs.readlinkSync(from) === relativeTo) {
                 console.log(`Already exists link: ${from} -> ${fs.readlinkSync(from)}`);
                 return;
             }
-            fs.unlink(from);
+            fs.unlinkSync(from);
         } else {
             fs.renameSync(from, `${from}~`);
         }
     } catch (err) {
         // File not exists.
     }
-    fs.symlinkSync(to, from, 'dir');
+    fs.symlinkSync(relativeTo, from, 'dir');
     console.log(`Make link: ${from} -> ${fs.readlinkSync(from)}`);
 }
 

@@ -1,30 +1,53 @@
-# ‘PaSoRich’
-An example extension for [Xcratch](https://xcratch.github.io/)
-
-This extension add extra-block "do it", that executes string in its input field as a sentence in Javascript and return the result.
-
+# PaSoRich
+An extension for [Xcratch](https://xcratch.github.io/) that reads the IDm of FeliCa smart cards
+(Suica, PASMO, student ID cards, etc.) with a SONY PaSoRi USB NFC reader via the WebUSB API.
 
 ## ✨ What You Can Do With This Extension
 
-Play [Example Project](https://xcratch.github.io/editor/#https://githubAccount.github.io/xcx-pasorich/projects/example.sb3) to look at what you can do with "‘PaSoRich’" extension. 
-<iframe src="https://xcratch.github.io/editor/player#https://githubAccount.github.io/xcx-pasorich/projects/example.sb3" width="540px" height="460px"></iframe>
+- Connect one or more PaSoRi readers to your project
+- Read the IDm (unique ID) of a FeliCa card held over a reader
+- Trigger scripts with the "when read" hat block
+- Supported readers: SONY RC-S380/S, RC-S380/P, RC-S300/S, RC-S300/P
+- Requires a WebUSB-capable browser (Google Chrome / Microsoft Edge)
 
+Play the [Example Project](https://xcratch.github.io/editor/#https://con3code.github.io/xcx-pasorich/projects/example.sb3) to see what you can do with the PaSoRich extension.
+
+> Note: ISO/IEC 14443 Type B cards (e.g. My Number Card) are not supported.
+> See [docs/usb-nfc4-typeb-report.md](docs/usb-nfc4-typeb-report.md) for the technical study
+> of Type B support and generic PC/SC readers such as I-O DATA USB-NFC4 (in Japanese).
 
 ## How to Use in Xcratch
 
-This extension can be used with other extension in [Xcratch](https://xcratch.github.io/). 
-1. Open [Xcratch Editor](https://xcratch.github.io/editor)
-2. Click 'Add Extension' button
-3. Select 'Extension Loader' extension
-4. Type the module URL in the input field 
+This extension can be used with other extensions in [Xcratch](https://xcratch.github.io/).
+1. Open the [Xcratch Editor](https://xcratch.github.io/editor)
+2. Click the 'Add Extension' button
+3. Select the 'Extension Loader' extension
+4. Type the module URL in the input field
 ```
-https://githubAccount.github.io/xcx-pasorich/dist/pasorich.mjs
+https://con3code.github.io/xcx-pasorich/dist/pasorich.mjs
 ```
-5. Click 'OK' button
+5. Click the 'OK' button
 6. Now you can use the blocks of this extension
 
+## Blocks
+
+| Block | Type | Description |
+| --- | --- | --- |
+| Connect | command | Open the device chooser and register a PaSoRi reader |
+| read #[n] reader | command | Poll reader n for a FeliCa card and store its IDm |
+| IDm of #[n] | reporter | The IDm last read by reader n (empty if no card) |
+| reset IDm | command | Clear the stored IDm of all readers |
+| reset Device | command | Release and unregister all readers |
+| when read #[n] reader | hat | Fires after reader n finished a read |
 
 ## Development
+
+### Source Layout
+
+- `src/vm/extensions/block/index.js` — block definitions and device management
+- `src/vm/extensions/block/s380-driver.js` — RC-S380 communication (vendor protocol)
+- `src/vm/extensions/block/s300-driver.js` — RC-S300 communication (CCID escape / transparent session)
+- `src/vm/extensions/block/usb-util.js` — shared WebUSB helpers
 
 ### Install Dependencies
 
@@ -34,15 +57,15 @@ npm install
 
 ### Setup Development Environment
 
-Change ```vmSrcOrg``` to your local ```scratch-vm``` directory in ```./scripts/setup-dev.js``` then run setup-dev script to setup development environment.
+Run the setup-dev script with the path to your local `scratch-vm` to link its sources into `src/vm`.
 
 ```sh
-npm run setup-dev
+npm run setup-dev -- ../xcratch/packages/scratch-vm
 ```
 
 ### Bundle into a Module
 
-Run build script to bundle this extension into a module file which could be loaded on Xcratch.
+Run the build script to bundle this extension into a module file which can be loaded on Xcratch.
 
 ```sh
 npm run build
@@ -50,7 +73,7 @@ npm run build
 
 ### Watch and Bundle
 
-Run watch script to watch the changes of source files and bundle automatically.
+Run the watch script to watch the changes of source files and bundle automatically.
 
 ```sh
 npm run watch
@@ -58,7 +81,7 @@ npm run watch
 
 ### Test
 
-Run test script to test this extension.
+Run the test script to test this extension.
 
 ```sh
 npm run test
@@ -70,7 +93,7 @@ This project uses npm version commands and GitHub Actions for versioning and dep
 
 #### Create a New Version
 
-Use npm version command to update the version number. This will automatically:
+Use the npm version command to update the version number. This will automatically:
 1. Update version in `package.json`
 2. Run the build script
 3. Create version-specific build files in `dist/{version}/`
@@ -124,12 +147,10 @@ All build versions are recorded in `dist/versions.json`:
 }
 ```
 
-
 ## 🏠 Home Page
 
-Open this page from [https://githubAccount.github.io/xcx-pasorich/](https://githubAccount.github.io/xcx-pasorich/)
-
+Open this page from [https://con3code.github.io/xcx-pasorich/](https://con3code.github.io/xcx-pasorich/)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/githubAccount/xcx-pasorich/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check the [issues page](https://github.com/con3code/xcx-pasorich/issues).

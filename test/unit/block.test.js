@@ -1,10 +1,12 @@
 import { blockClass } from "../../src/vm/extensions/block/index.js";
 
 describe("blockClass", () => {
+    const formatMessage = function (msg) {
+        return msg.default;
+    };
+    formatMessage.setup = () => null;
     const runtime = {
-        formatMessage: function (msg) {
-            return msg.default;
-        }
+        formatMessage: formatMessage
     };
 
     test("should create an instance of blockClass", () => {
@@ -12,9 +14,30 @@ describe("blockClass", () => {
         expect(block).toBeInstanceOf(blockClass);
     });
 
-    test("doIt('3 + 4') should return 7", () => {
+    test("getInfo() should return metadata with pasorich blocks", () => {
         const block = new blockClass(runtime);
-        const result = block.doIt({SCRIPT: "3 + 4"});
-        expect(result).toBe(7);
+        const info = block.getInfo();
+        expect(info.id).toBe("pasorich");
+        const opcodes = info.blocks
+            .filter(b => typeof b === "object")
+            .map(b => b.opcode);
+        expect(opcodes).toEqual([
+            "openPasori",
+            "readPasori",
+            "getIdm",
+            "resetIdm",
+            "resetDevice",
+            "whenRead"
+        ]);
+    });
+
+    test("getIdm should return null when no device is registered", () => {
+        const block = new blockClass(runtime);
+        expect(block.getIdm({DEVICE_NUMBER: "1"})).toBeNull();
+    });
+
+    test("getDeviceNumberMenuItems should return a placeholder when empty", () => {
+        const block = new blockClass(runtime);
+        expect(block.getDeviceNumberMenuItems()).toEqual([{text: " ", value: " "}]);
     });
 });
