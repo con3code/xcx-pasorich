@@ -1,4 +1,4 @@
-# PaSoRich
+# PaSoRich 2.5 for Xcratch
 An extension for [Xcratch](https://xcratch.github.io/) that reads the IDm of FeliCa smart cards
 (Suica, PASMO, student ID cards, etc.) with a SONY PaSoRi USB NFC reader via the WebUSB API.
 
@@ -13,11 +13,18 @@ An extension for [Xcratch](https://xcratch.github.io/) that reads the IDm of Fel
 
 | Reader | Windows | macOS / Android | Note |
 | --- | --- | --- | --- |
-| SONY RC-S380/S, RC-S380/P | ✅ | ✅ | |
-| SONY RC-S300/S, RC-S300/P | ✅ | ✅ | |
-| SONY RC-S330 | ❌ | ✅ | Legacy readers are not accessible via WebUSB on Windows (no WinUSB driver binding) |
-| SONY RC-S320 | ❌ | ✅ | Same as above |
-| SONY RC-S310 | ❌ | ✅ (untested) | Same protocol as RC-S320; not verified on real hardware |
+| SONY RC-S380/S, RC-S380/P | ✅ *1 | ✅ | |
+| SONY RC-S300/S, RC-S300/P | ✅ *1 | ✅ | |
+| SONY RC-S330 | ✅ *2 | ✅ | |
+| SONY RC-S320 | ✅ *2 | ✅ | |
+| SONY RC-S310 | ✅ *2 | ✅ (untested) | Same protocol as RC-S320; not verified on real hardware |
+
+On Windows, WebUSB requires the reader to be bound to the WinUSB driver.
+All RC-S models need the driver switched to WinUSB before use:
+
+- \*1 Switch the driver to WinUSB with SONY's official software (NFC Port Software).
+- \*2 No official tool covers these legacy readers; manually replace the driver with
+  WinUSB using a tool such as [Zadig](https://zadig.akeo.ie/) (untested).
 
 The RC-S310/S320/S330 protocol implementation is based on
 [libpafe](https://github.com/rfujita/libpafe), with WebUSB feasibility proven by

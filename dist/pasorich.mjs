@@ -1280,7 +1280,8 @@ var modelNames$1 = {
 };
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
-var RESPONSE_TIMEOUT$1 = 1500;
+// (リファレンス実装 libpafe のデフォルトは 400ms)
+var RESPONSE_TIMEOUT$1 = 500;
 var RF_ANTENNA_ON = [0xd4, 0x32, 0x01, 0x01];
 // InListPassiveTarget: MaxTg=1, BrTy=1 (FeliCa 212kbps),
 // ポーリングコマンド (cmd=00, syscode=FFFF, RFU=00, timeslot=00)
@@ -1458,7 +1459,8 @@ var productIds = [PRODUCT_ID_S310, PRODUCT_ID_S320];
 var modelNames = _defineProperty(_defineProperty({}, PRODUCT_ID_S310, 'RC-S310'), PRODUCT_ID_S320, 'RC-S320');
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
-var RESPONSE_TIMEOUT = 1500;
+// (リファレンス実装 libpafe のデフォルトは 400ms)
+var RESPONSE_TIMEOUT = 500;
 
 // 初期化コマンド列 (libpafe の pasori_init と同じ。各コマンド後に応答を 1 回読む)
 var S310_INIT_COMMANDS = [[0x54]];
@@ -1695,7 +1697,7 @@ var findDriver = function findDriver(productId) {
  */
 var nfcDevices = [];
 var deviceOpening = false;
-var pasorichVersion = 'PaSoRich 2.5(2502)';
+var pasorichVersion = 'PaSoRich 2.5(2503)';
 
 /**
  * Formatter which is used for translation.

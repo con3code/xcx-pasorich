@@ -22,7 +22,8 @@ const modelNames = {
 };
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
-const RESPONSE_TIMEOUT = 1500;
+// (リファレンス実装 libpafe のデフォルトは 400ms)
+const RESPONSE_TIMEOUT = 500;
 
 // 初期化コマンド列 (libpafe の pasori_init と同じ。各コマンド後に応答を 1 回読む)
 const S310_INIT_COMMANDS = [

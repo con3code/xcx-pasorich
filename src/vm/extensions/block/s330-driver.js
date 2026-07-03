@@ -18,7 +18,8 @@ const modelNames = {
 };
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
-const RESPONSE_TIMEOUT = 1500;
+// (リファレンス実装 libpafe のデフォルトは 400ms)
+const RESPONSE_TIMEOUT = 500;
 
 const RF_ANTENNA_ON = [0xd4, 0x32, 0x01, 0x01];
 // InListPassiveTarget: MaxTg=1, BrTy=1 (FeliCa 212kbps),
