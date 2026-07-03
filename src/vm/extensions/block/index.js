@@ -1,7 +1,7 @@
 /*
 //
 // PaSoRich for Xcratch
-// 20260703 - 2.5(2501)
+// 20260703 - 2.5(2502)
 //
 // SONY PaSoRi (RC-S380 / RC-S300 / RC-S330 / RC-S320 / RC-S310) から
 // FeliCa の IDm を WebUSB で読み取る。
@@ -52,7 +52,7 @@ const findDriver = productId => drivers.find(d => d.productIds.includes(productI
 const nfcDevices = [];
 let deviceOpening = false;
 
-const pasorichVersion = 'PaSoRich 2.5(2501)';
+const pasorichVersion = 'PaSoRich 2.5(2502)';
 
 
 /**
@@ -449,8 +449,13 @@ Scratch3PasorichBlocks.prototype.readPasoriTask = async function (deviceNumber) 
     }
 
     entry.idmNum = await entry.driver.readIdm(entry.device, entry.claimed);
+    // RC-S330 など productName / serialNumber を返さないデバイスは
+    // ドライバの機種名テーブルで補う
+    const modelName = entry.device.productName ||
+        entry.driver.modelNames[entry.device.productId] || 'Unknown';
+    const serialNumber = entry.device.serialNumber || '-';
     console.log('IDm #', deviceNumber, ': ', entry.idmNum,
-        '(', entry.device.productName, ':', entry.device.serialNumber, ')');
+        '(', modelName, ':', serialNumber, ')');
 
     this.pasoriReadCallback(deviceNumber);
 };

@@ -12,6 +12,11 @@ import {send, receive, bytesToHex, PASORI_ACK, buildPasoriFrame, parsePasoriFram
 
 const productIds = [0x02e1]; // RC-S330
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+const modelNames = {
+    0x02e1: 'RC-S330'
+};
+
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
 const RESPONSE_TIMEOUT = 1500;
 
@@ -96,4 +101,4 @@ const readIdm = async (device, claimed) => {
     return bytesToHex(resp.slice(6, 14));
 };
 
-export default {productIds, setup, readIdm};
+export default {productIds, modelNames, setup, readIdm};

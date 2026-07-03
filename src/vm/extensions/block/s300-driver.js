@@ -12,6 +12,12 @@ import {receive, sleep, bytesToHex} from './usb-util';
 
 const productIds = [0x0dc8, 0x0dc9]; // RC-S300/S, RC-S300/P
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+const modelNames = {
+    0x0dc8: 'RC-S300/S',
+    0x0dc9: 'RC-S300/P'
+};
+
 let seqNumber = 0;
 
 /**
@@ -106,4 +112,4 @@ const readIdm = async (device, claimed) => {
     return '';
 };
 
-export default {productIds, setup, readIdm};
+export default {productIds, modelNames, setup, readIdm};

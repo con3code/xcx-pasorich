@@ -15,6 +15,12 @@ const PRODUCT_ID_S310 = 0x006c;
 const PRODUCT_ID_S320 = 0x01bb;
 const productIds = [PRODUCT_ID_S310, PRODUCT_ID_S320];
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+const modelNames = {
+    [PRODUCT_ID_S310]: 'RC-S310',
+    [PRODUCT_ID_S320]: 'RC-S320'
+};
+
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
 const RESPONSE_TIMEOUT = 1500;
 
@@ -123,4 +129,4 @@ const readIdm = async (device, claimed) => {
     return bytesToHex(resp.slice(3, 11));
 };
 
-export default {productIds, setup, readIdm};
+export default {productIds, modelNames, setup, readIdm};

@@ -86,7 +86,7 @@ function toPrimitive(t, r) {
     if ("object" != _typeof$1(i)) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return (String )(t);
+  return ("string" === r ? String : Number)(t);
 }
 
 function toPropertyKey(t) {
@@ -928,6 +928,12 @@ var withTimeout = function withTimeout(promise, msec) {
 
 var productIds$3 = [0x06c1, 0x06c3]; // RC-S380/S, RC-S380/P
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+var modelNames$3 = {
+  0x06c1: 'RC-S380/S',
+  0x06c3: 'RC-S380/P'
+};
+
 /**
  * バルク転送エンドポイントを探す。
  * @param {USBInterface} usbInterface - 対象インターフェイス
@@ -1088,12 +1094,18 @@ var readIdm$3 = /*#__PURE__*/function () {
 }();
 var s380Driver = {
   productIds: productIds$3,
+  modelNames: modelNames$3,
   setup: setup$3,
   readIdm: readIdm$3
 };
 
 var productIds$2 = [0x0dc8, 0x0dc9]; // RC-S300/S, RC-S300/P
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+var modelNames$2 = {
+  0x0dc8: 'RC-S300/S',
+  0x0dc9: 'RC-S300/P'
+};
 var seqNumber = 0;
 
 /**
@@ -1255,11 +1267,17 @@ var readIdm$2 = /*#__PURE__*/function () {
 }();
 var s300Driver = {
   productIds: productIds$2,
+  modelNames: modelNames$2,
   setup: setup$2,
   readIdm: readIdm$2
 };
 
 var productIds$1 = [0x02e1]; // RC-S330
+
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+var modelNames$1 = {
+  0x02e1: 'RC-S330'
+};
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
 var RESPONSE_TIMEOUT$1 = 1500;
@@ -1418,13 +1436,26 @@ var readIdm$1 = /*#__PURE__*/function () {
 }();
 var s330Driver = {
   productIds: productIds$1,
+  modelNames: modelNames$1,
   setup: setup$1,
   readIdm: readIdm$1
 };
 
+function _defineProperty(e, r, t) {
+  return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+    value: t,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[r] = t, e;
+}
+
 var PRODUCT_ID_S310 = 0x006c;
 var PRODUCT_ID_S320 = 0x01bb;
 var productIds = [PRODUCT_ID_S310, PRODUCT_ID_S320];
+
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+var modelNames = _defineProperty(_defineProperty({}, PRODUCT_ID_S310, 'RC-S310'), PRODUCT_ID_S320, 'RC-S320');
 
 // カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
 var RESPONSE_TIMEOUT = 1500;
@@ -1619,6 +1650,7 @@ var readIdm = /*#__PURE__*/function () {
 }();
 var s320Driver = {
   productIds: productIds,
+  modelNames: modelNames,
   setup: setup,
   readIdm: readIdm
 };
@@ -1663,7 +1695,7 @@ var findDriver = function findDriver(productId) {
  */
 var nfcDevices = [];
 var deviceOpening = false;
-var pasorichVersion = 'PaSoRich 2.5(2501)';
+var pasorichVersion = 'PaSoRich 2.5(2502)';
 
 /**
  * Formatter which is used for translation.
@@ -2117,7 +2149,7 @@ var readPasoriQueue = new AsyncQueue();
 // 実際のreadPasoriの処理を行う関数
 Scratch3PasorichBlocks.prototype.readPasoriTask = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee4(deviceNumber) {
-    var entry;
+    var entry, modelName, serialNumber;
     return _regeneratorRuntime.wrap(function (_context4) {
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
@@ -2155,7 +2187,11 @@ Scratch3PasorichBlocks.prototype.readPasoriTask = /*#__PURE__*/function () {
           return entry.driver.readIdm(entry.device, entry.claimed);
         case 6:
           entry.idmNum = _context4.sent;
-          console.log('IDm #', deviceNumber, ': ', entry.idmNum, '(', entry.device.productName, ':', entry.device.serialNumber, ')');
+          // RC-S330 など productName / serialNumber を返さないデバイスは
+          // ドライバの機種名テーブルで補う
+          modelName = entry.device.productName || entry.driver.modelNames[entry.device.productId] || 'Unknown';
+          serialNumber = entry.device.serialNumber || '-';
+          console.log('IDm #', deviceNumber, ': ', entry.idmNum, '(', modelName, ':', serialNumber, ')');
           this.pasoriReadCallback(deviceNumber);
         case 7:
         case "end":

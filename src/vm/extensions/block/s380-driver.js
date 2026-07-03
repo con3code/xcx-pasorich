@@ -7,6 +7,12 @@ import {send, receive, bytesToHex} from './usb-util';
 
 const productIds = [0x06c1, 0x06c3]; // RC-S380/S, RC-S380/P
 
+// productId ごとの機種名 (デバイスが productName を返さない場合の表示用)
+const modelNames = {
+    0x06c1: 'RC-S380/S',
+    0x06c3: 'RC-S380/P'
+};
+
 /**
  * バルク転送エンドポイントを探す。
  * @param {USBInterface} usbInterface - 対象インターフェイス
@@ -95,4 +101,4 @@ const readIdm = async (device, claimed) => {
     return '';
 };
 
-export default {productIds, setup, readIdm};
+export default {productIds, modelNames, setup, readIdm};
