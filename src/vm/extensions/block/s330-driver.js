@@ -83,9 +83,9 @@ const readIdm = async (device, claimed) => {
     try {
         resp = await transceive(device, claimed, LIST_PASSIVE_TARGET_FELICA);
     } catch (error) {
-        // タイムアウト時は ACK フレームで実行中コマンドを中断する (PN53x 仕様)
+        // カード不在などでタイムアウトしたら ACK フレームで実行中コマンドを
+        // 中断し (PN53x 仕様)、他機種と同様に「IDm なし」として扱う
         await send(device, claimed.endpointOut, PASORI_ACK).catch(() => {});
-        console.log('RC-S330 polling:', error.message);
         return '';
     }
 

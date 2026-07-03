@@ -1,7 +1,7 @@
 /*
 //
 // PaSoRich for Xcratch
-// 20260703 - 2.2(2607)
+// 20260703 - 2.5(2501)
 //
 // SONY PaSoRi (RC-S380 / RC-S300 / RC-S330 / RC-S320 / RC-S310) から
 // FeliCa の IDm を WebUSB で読み取る。
@@ -52,7 +52,7 @@ const findDriver = productId => drivers.find(d => d.productIds.includes(productI
 const nfcDevices = [];
 let deviceOpening = false;
 
-const pasorichVersion = 'PaSoRich 2.2(2607)';
+const pasorichVersion = 'PaSoRich 2.5(2501)';
 
 
 /**

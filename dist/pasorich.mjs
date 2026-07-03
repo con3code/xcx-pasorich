@@ -3,18 +3,18 @@ var img$2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF0CAIAAABwgtBbA
 var img$1 = "data:image/png;base64,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";
 
 var en$1 = {
-	"pasorich.entry.name": "PaSoRich 2.2",
+	"pasorich.entry.name": "PaSoRich 2.5",
 	"pasorich.entry.description": "Read SmartCard IDm."
 };
 var ja$1 = {
-	"pasorich.entry.name": "パソリッチ 2.2",
+	"pasorich.entry.name": "パソリッチ 2.5",
 	"pasorich.entry.description": "ICカードのIDmを読み取る。"
 };
 var translations$1 = {
 	en: en$1,
 	ja: ja$1,
 	"ja-Hira": {
-	"pasorich.entry.name": "ぱそりっち 2.2",
+	"pasorich.entry.name": "ぱそりっち 2.5",
 	"pasorich.entry.description": "ICかーどのばんごうをよみとる。"
 }
 };
@@ -1380,7 +1380,7 @@ var setup$1 = /*#__PURE__*/function () {
  */
 var readIdm$1 = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee3(device, claimed) {
-    var resp, _t;
+    var resp;
     return _regeneratorRuntime.wrap(function (_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
@@ -1393,11 +1393,10 @@ var readIdm$1 = /*#__PURE__*/function () {
           break;
         case 2:
           _context3.prev = 2;
-          _t = _context3["catch"](0);
+          _context3["catch"](0);
           _context3.next = 3;
           return send(device, claimed.endpointOut, PASORI_ACK).catch(function () {});
         case 3:
-          console.log('RC-S330 polling:', _t.message);
           return _context3.abrupt("return", '');
         case 4:
           if (!(resp[0] !== 0xd5 || resp[1] !== 0x4b || (resp[2] || 0) < 1 || resp[5] !== 0x01)) {
@@ -1585,7 +1584,7 @@ var setup = /*#__PURE__*/function () {
  */
 var readIdm = /*#__PURE__*/function () {
   var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee4(device, claimed) {
-    var resp, _t;
+    var resp;
     return _regeneratorRuntime.wrap(function (_context4) {
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
@@ -1598,8 +1597,7 @@ var readIdm = /*#__PURE__*/function () {
           break;
         case 2:
           _context4.prev = 2;
-          _t = _context4["catch"](0);
-          console.log('RC-S320 polling:', _t.message);
+          _context4["catch"](0);
           return _context4.abrupt("return", '');
         case 3:
           if (!(resp[0] !== 0x5d || resp[2] !== 0x01)) {
@@ -1665,7 +1663,7 @@ var findDriver = function findDriver(productId) {
  */
 var nfcDevices = [];
 var deviceOpening = false;
-var pasorichVersion = 'PaSoRich 2.2(2607)';
+var pasorichVersion = 'PaSoRich 2.5(2501)';
 
 /**
  * Formatter which is used for translation.

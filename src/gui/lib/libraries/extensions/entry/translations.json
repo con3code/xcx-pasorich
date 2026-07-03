@@ -1,14 +1,14 @@
 {
   "en": {
-    "pasorich.entry.name": "PaSoRich 2.2",
+    "pasorich.entry.name": "PaSoRich 2.5",
     "pasorich.entry.description": "Read SmartCard IDm."
   },
   "ja": {
-    "pasorich.entry.name": "パソリッチ 2.2",
+    "pasorich.entry.name": "パソリッチ 2.5",
     "pasorich.entry.description": "ICカードのIDmを読み取る。"
   },
   "ja-Hira": {
-    "pasorich.entry.name": "ぱそりっち 2.2",
+    "pasorich.entry.name": "ぱそりっち 2.5",
     "pasorich.entry.description": "ICかーどのばんごうをよみとる。"
   }
 }

@@ -112,7 +112,7 @@ const readIdm = async (device, claimed) => {
     try {
         resp = await transceive(device, claimed, FELICA_POLLING);
     } catch (error) {
-        console.log('RC-S320 polling:', error.message);
+        // カード不在などでタイムアウトしたら他機種と同様に「IDm なし」として扱う
         return '';
     }
 
