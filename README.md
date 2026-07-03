@@ -7,8 +7,21 @@ An extension for [Xcratch](https://xcratch.github.io/) that reads the IDm of Fel
 - Connect one or more PaSoRi readers to your project
 - Read the IDm (unique ID) of a FeliCa card held over a reader
 - Trigger scripts with the "when read" hat block
-- Supported readers: SONY RC-S380/S, RC-S380/P, RC-S300/S, RC-S300/P
 - Requires a WebUSB-capable browser (Google Chrome / Microsoft Edge)
+
+### Supported readers
+
+| Reader | Windows | macOS / Android | Note |
+| --- | --- | --- | --- |
+| SONY RC-S380/S, RC-S380/P | ✅ | ✅ | |
+| SONY RC-S300/S, RC-S300/P | ✅ | ✅ | |
+| SONY RC-S330 | ❌ | ✅ | Legacy readers are not accessible via WebUSB on Windows (no WinUSB driver binding) |
+| SONY RC-S320 | ❌ | ✅ | Same as above |
+| SONY RC-S310 | ❌ | ✅ (untested) | Same protocol as RC-S320; not verified on real hardware |
+
+The RC-S310/S320/S330 protocol implementation is based on
+[libpafe](https://github.com/rfujita/libpafe), with WebUSB feasibility proven by
+[webpasori](https://github.com/muojp/webpasori).
 
 Play the [Example Project](https://xcratch.github.io/editor/#https://con3code.github.io/xcx-pasorich/projects/example.sb3) to see what you can do with the PaSoRich extension.
 
@@ -47,7 +60,9 @@ https://con3code.github.io/xcx-pasorich/dist/pasorich.mjs
 - `src/vm/extensions/block/index.js` — block definitions and device management
 - `src/vm/extensions/block/s380-driver.js` — RC-S380 communication (vendor protocol)
 - `src/vm/extensions/block/s300-driver.js` — RC-S300 communication (CCID escape / transparent session)
-- `src/vm/extensions/block/usb-util.js` — shared WebUSB helpers
+- `src/vm/extensions/block/s330-driver.js` — RC-S330 communication (PN533 commands over bulk transfer)
+- `src/vm/extensions/block/s320-driver.js` — RC-S310/S320 communication (vendor control transfer + interrupt IN)
+- `src/vm/extensions/block/usb-util.js` — shared WebUSB helpers (framing, checksum, timeout)
 
 ### Install Dependencies
 

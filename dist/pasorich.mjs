@@ -3,18 +3,18 @@ var img$2 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF0CAIAAABwgtBbA
 var img$1 = "data:image/png;base64,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";
 
 var en$1 = {
-	"pasorich.entry.name": "PaSoRich 2.0",
+	"pasorich.entry.name": "PaSoRich 2.2",
 	"pasorich.entry.description": "Read SmartCard IDm."
 };
 var ja$1 = {
-	"pasorich.entry.name": "パソリッチ 2.0",
+	"pasorich.entry.name": "パソリッチ 2.2",
 	"pasorich.entry.description": "ICカードのIDmを読み取る。"
 };
 var translations$1 = {
 	en: en$1,
 	ja: ja$1,
 	"ja-Hira": {
-	"pasorich.entry.name": "ぱそりっち 2.0",
+	"pasorich.entry.name": "ぱそりっち 2.2",
 	"pasorich.entry.description": "ICかーどのばんごうをよみとる。"
 }
 };
@@ -727,6 +727,39 @@ var translations = {
 
 var img = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAAB65masAAAES0lEQVRYCbWYy07bQBSGJ4QQAmoDCVGgYYHEpkVp1pW6aCVYIWDLCl4AxBJeA4lXKGKFKiEQah+iC4TUbkBCokjcLwnXJnH/33gGZ2rHju2OZHkuPt/8PnM7dkyES4ZmHtPKoYttoQn/GdCSQMMw3l5fX6/i+l2r1aooC+1C0TPVy+XyxdXV1Vc8WYzs/QB7d3d3V15cXKyNjIwYHR0dHN6Wr1gsZgwNDRkLCwtV8sB9G4lIeg7iqkFEudmQB+6XSARiSA6LxWLLHnMTx3ryLi8vDyMRWK1Wn1KpVKQCySM3tEDMk9QfJLs3BgcHjfX1dXoAzc0TFpRxdHRkrK2tGYVCoeElyYV1KpRIAAYvLi4qdoFbW1vNVbm0bm5uNggkl3w3ge1uDVp9BnOQC8RMbW1tYnR01MwvLy8LTHSrxfmGlSt6e3vF/Py8GBsbE7Sv1+vmw+SiLYOC41z0uw9mz8/P+eZmSqfTIplMioeHB09xNICHBDxlPk872stkcbOyrN99Czw9PVXP9vX1mRzsYzqvaZkvxNTT06Oes7jhBR4fH6vpEFYgh1smixuJwKSEhhVo9yAEkhtO4P39fT+GIh6VQLsHyQU/L9n6Xc0rvcFefnx87MdkVlVBPQghJsPuQXLBH1BwLeNLIHb7PFehTEEFOi0ScsmXbP3uSyD2LW4zyjasQPsQk0u+gmsZXwLb29t7oxSoDzH5mi5V9CUQsd/rKATKOah7kHylSMuovU2rV0WcAjFcKQQFqi7sENs9yDmI0yXFfhjMqk6sjB8PpjG5MY/VUSzCCrR7EJEOVzHhL+efTaUfgVl8Q6iYLR6Pmwc/D3s5ZDZe06zTKqbBzc0N+Y4LxZdADG9N9pzJZASjk1bF0d5NoMUPLhC7vdQncrmcmW81UKCRfCn7ELPe4gcWmDk5OVHHXDb7zAkikPONgXlnZ6fo6uqiNjNZfMaE/yRfQ4wDPSEtsSWYWXYWJEk7ySHD4gf2YBZvqCIZwExdXMn0RCspn8+bgS6HGgtDmVp8R4Ge+yBWcOHs7Ez9c9nd3RU7OzuiVCqJpaUl1UkrmdXVVRXy0478SqXyxonhOcSYMw2RDCFTU1Nie3ub+5cT07Xu9vZWrKysiLm5uYZneEo9PT05RjSeHsQOn7MfcyQfHByI8fHxhk7CFMhHP8/fERrI04OINDK6QI0Ruki+W0TjKTCRSKTtsWBoNQ4A8tmPQ5PwFAjX1/CLwsk2sjruiejn5bC3kT0FYt/6Pjk5+fyVbTOMMks+BH4LxITh5729Pf46aPhlEWV5f3//Gv18Ciowhl8bv2ZmZujFyEXOzs7Wwf8JgWqvbVkojEvYw8oQGanA6elpw/rL+t5NlG/VEFnE8bSO0GhgY2MjiZX3fCg7kPGsQ+1LFc7h+sTExO3w8PBNd3f3FMK3Hy+tjTnfAqUZOv+A/Edcr2RdgDtX7C6uLYjjf0fX9BdJ3XDAbDvRmgAAAABJRU5ErkJggg==";
 
+function _arrayLikeToArray$1(r, a) {
+  (null == a || a > r.length) && (a = r.length);
+  for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+  return n;
+}
+
+function _arrayWithoutHoles(r) {
+  if (Array.isArray(r)) return _arrayLikeToArray$1(r);
+}
+
+function _iterableToArray(r) {
+  if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r);
+}
+
+function _unsupportedIterableToArray$1(r, a) {
+  if (r) {
+    if ("string" == typeof r) return _arrayLikeToArray$1(r, a);
+    var t = {}.toString.call(r).slice(8, -1);
+    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray$1(r, a) : void 0;
+  }
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+function _toConsumableArray(r) {
+  return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray$1(r) || _nonIterableSpread();
+}
+
+function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: true } : { done: false, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = true, u = false; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = true, o = r; }, f: function f() { try { a || null == t.return || t.return(); } finally { if (u) throw o; } } }; }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 /**
  * WebUSB 共通ユーティリティ
  */
@@ -816,7 +849,84 @@ var bytesToHex = function bytesToHex(bytes) {
   }).join('');
 };
 
-var productIds$1 = [0x06c1, 0x06c3]; // RC-S380/S, RC-S380/P
+/**
+ * PaSoRi (RC-S310/S320/S330/S380) 共通の物理フレーム用 ACK。
+ * PN53x 系では実行中コマンドの中断にも使う。
+ */
+var PASORI_ACK = [0x00, 0x00, 0xff, 0x00, 0xff, 0x00];
+
+/**
+ * フレームのチェックサム (総和の 2 の補数) を計算する。
+ * @param {Array<number>} bytes - 対象バイト列
+ * @returns {number} チェックサム値
+ */
+var frameChecksum = function frameChecksum(bytes) {
+  var sum = 0;
+  var _iterator = _createForOfIteratorHelper(bytes),
+    _step;
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var b = _step.value;
+      sum += b;
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+  return 0x100 - (sum & 0xff) & 0xff;
+};
+
+/**
+ * PaSoRi 共通フレーム (00 00 FF LEN LCS payload DCS 00) を組み立てる。
+ * @param {Array<number>} payload - コマンド本体 (1〜248 バイト)
+ * @returns {Array<number>} フレーム全体
+ */
+var buildPasoriFrame = function buildPasoriFrame(payload) {
+  return [0x00, 0x00, 0xff, payload.length, 0x100 - payload.length & 0xff].concat(_toConsumableArray(payload), [frameChecksum(payload), 0x00]);
+};
+
+/**
+ * PaSoRi 共通フレームを検証してペイロードを取り出す。
+ * @param {Array<number>} bytes - 受信フレーム
+ * @returns {Array<number>|null} ペイロード (フレーム不正なら null)
+ */
+var parsePasoriFrame = function parsePasoriFrame(bytes) {
+  if (bytes.length < 7 || bytes[0] !== 0x00 || bytes[1] !== 0x00 || bytes[2] !== 0xff) {
+    return null;
+  }
+  var len = bytes[3];
+  if (bytes[4] !== (0x100 - len & 0xff) || bytes.length < len + 7) {
+    return null;
+  }
+  var payload = bytes.slice(5, 5 + len);
+  if (bytes[5 + len] !== frameChecksum(payload)) {
+    return null;
+  }
+  return payload;
+};
+
+/**
+ * Promise にタイムアウトをかける。
+ * WebUSB の transferIn にはタイムアウトがないため、カード不在などで
+ * 応答が返らないときにブロックが固まるのを防ぐ。
+ * @param {Promise} promise - 対象の Promise
+ * @param {number} msec - タイムアウト (ms)
+ * @returns {Promise} タイムアウト付き Promise
+ */
+var withTimeout = function withTimeout(promise, msec) {
+  var timer;
+  var timeout = new Promise(function (resolve, reject) {
+    timer = setTimeout(function () {
+      return reject(new Error("USB response timeout (".concat(msec, "ms)")));
+    }, msec);
+  });
+  return Promise.race([promise, timeout]).finally(function () {
+    return clearTimeout(timer);
+  });
+};
+
+var productIds$3 = [0x06c1, 0x06c3]; // RC-S380/S, RC-S380/P
 
 /**
  * バルク転送エンドポイントを探す。
@@ -824,7 +934,7 @@ var productIds$1 = [0x06c1, 0x06c3]; // RC-S380/S, RC-S380/P
  * @param {string} direction - 'in' または 'out'
  * @returns {USBEndpoint} 見つかったエンドポイント
  */
-var getBulkEndpoint = function getBulkEndpoint(usbInterface, direction) {
+var getBulkEndpoint$1 = function getBulkEndpoint(usbInterface, direction) {
   return usbInterface.alternate.endpoints.find(function (e) {
     return e.direction === direction && e.type === 'bulk';
   });
@@ -835,7 +945,7 @@ var getBulkEndpoint = function getBulkEndpoint(usbInterface, direction) {
  * @param {USBDevice} device - 対象デバイス
  * @returns {Promise<object>} interfaceNumber / endpointIn / endpointOut
  */
-var setup$1 = /*#__PURE__*/function () {
+var setup$3 = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee(device) {
     var configuration, confValue, usbInterface, endpointIn, endpointOut;
     return _regeneratorRuntime.wrap(function (_context) {
@@ -844,8 +954,8 @@ var setup$1 = /*#__PURE__*/function () {
           configuration = device.configurations[0];
           confValue = configuration.configurationValue || 1;
           usbInterface = configuration.interfaces[0];
-          endpointIn = getBulkEndpoint(usbInterface, 'in').endpointNumber;
-          endpointOut = getBulkEndpoint(usbInterface, 'out').endpointNumber;
+          endpointIn = getBulkEndpoint$1(usbInterface, 'in').endpointNumber;
+          endpointOut = getBulkEndpoint$1(usbInterface, 'out').endpointNumber;
           _context.next = 1;
           return device.open();
         case 1:
@@ -884,7 +994,7 @@ var IN_SET_RF_FELICA = [0x00, 0x00, 0xff, 0xff, 0xff, 0x06, 0x00, 0xfa, 0xd6, 0x
 var IN_SET_PROTOCOL_1 = [0x00, 0x00, 0xff, 0xff, 0xff, 0x28, 0x00, 0xd8, 0xd6, 0x02, 0x00, 0x18, 0x01, 0x01, 0x02, 0x01, 0x03, 0x00, 0x04, 0x00, 0x05, 0x00, 0x06, 0x00, 0x07, 0x08, 0x08, 0x00, 0x09, 0x00, 0x0a, 0x00, 0x0b, 0x00, 0x0c, 0x00, 0x0e, 0x04, 0x0f, 0x00, 0x10, 0x00, 0x11, 0x00, 0x12, 0x00, 0x13, 0x06, 0x4b, 0x00];
 var IN_SET_PROTOCOL_2 = [0x00, 0x00, 0xff, 0xff, 0xff, 0x04, 0x00, 0xfc, 0xd6, 0x02, 0x00, 0x18, 0x10, 0x00];
 var IN_COMM_RF_FELICA_POLLING = [0x00, 0x00, 0xff, 0xff, 0xff, 0x0a, 0x00, 0xf6, 0xd6, 0x04, 0x6e, 0x00, 0x06, 0x00, 0xff, 0xff, 0x01, 0x00, 0xb3, 0x00];
-var readIdm$1 = /*#__PURE__*/function () {
+var readIdm$3 = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee2(device, claimed) {
     var endpointOut, endpointIn, idm;
     return _regeneratorRuntime.wrap(function (_context2) {
@@ -977,12 +1087,12 @@ var readIdm$1 = /*#__PURE__*/function () {
   };
 }();
 var s380Driver = {
-  productIds: productIds$1,
-  setup: setup$1,
-  readIdm: readIdm$1
+  productIds: productIds$3,
+  setup: setup$3,
+  readIdm: readIdm$3
 };
 
-var productIds = [0x0dc8, 0x0dc9]; // RC-S300/S, RC-S300/P
+var productIds$2 = [0x0dc8, 0x0dc9]; // RC-S300/S, RC-S300/P
 
 var seqNumber = 0;
 
@@ -1032,7 +1142,7 @@ var sendEscape = /*#__PURE__*/function () {
  * @param {USBDevice} device - 対象デバイス
  * @returns {Promise<object>} interfaceNumber / endpointIn / endpointOut
  */
-var setup = /*#__PURE__*/function () {
+var setup$2 = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee2(device) {
     var configuration, confValue, usbInterface, endpointIn, endpointOut;
     return _regeneratorRuntime.wrap(function (_context2) {
@@ -1080,7 +1190,7 @@ var setup = /*#__PURE__*/function () {
  * @param {object} claimed - setup() が返した通信情報
  * @returns {Promise<string>} IDm の 16 進文字列 (カードがなければ空文字列)
  */
-var readIdm = /*#__PURE__*/function () {
+var readIdm$2 = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee3(device, claimed) {
     var endpointOut, endpointIn, len, pollingRes;
     return _regeneratorRuntime.wrap(function (_context3) {
@@ -1144,6 +1254,372 @@ var readIdm = /*#__PURE__*/function () {
   };
 }();
 var s300Driver = {
+  productIds: productIds$2,
+  setup: setup$2,
+  readIdm: readIdm$2
+};
+
+var productIds$1 = [0x02e1]; // RC-S330
+
+// カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
+var RESPONSE_TIMEOUT$1 = 1500;
+var RF_ANTENNA_ON = [0xd4, 0x32, 0x01, 0x01];
+// InListPassiveTarget: MaxTg=1, BrTy=1 (FeliCa 212kbps),
+// ポーリングコマンド (cmd=00, syscode=FFFF, RFU=00, timeslot=00)
+var LIST_PASSIVE_TARGET_FELICA = [0xd4, 0x4a, 0x01, 0x01, 0x00, 0xff, 0xff, 0x00, 0x00];
+
+/**
+ * バルク転送エンドポイントを探す。
+ * @param {USBInterface} usbInterface - 対象インターフェイス
+ * @param {string} direction - 'in' または 'out'
+ * @returns {USBEndpoint} 見つかったエンドポイント
+ */
+var getBulkEndpoint = function getBulkEndpoint(usbInterface, direction) {
+  return usbInterface.alternate.endpoints.find(function (e) {
+    return e.direction === direction && e.type === 'bulk';
+  });
+};
+
+/**
+ * コマンドを送信し、ACK と応答フレームを受けてペイロードを返す。
+ * @param {USBDevice} device - 対象デバイス
+ * @param {object} claimed - setup() が返した通信情報
+ * @param {Array<number>} payload - コマンド本体 (D4 xx ...)
+ * @returns {Promise<Array<number>>} 応答ペイロード (D5 xx ...)
+ */
+var transceive$1 = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee(device, claimed, payload) {
+    var ack, resp, respPayload;
+    return _regeneratorRuntime.wrap(function (_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 1;
+          return send(device, claimed.endpointOut, buildPasoriFrame(payload));
+        case 1:
+          _context.next = 2;
+          return withTimeout(receive(device, claimed.endpointIn, 64), RESPONSE_TIMEOUT$1);
+        case 2:
+          ack = _context.sent;
+          if (!(ack.length !== 6 || ack[4] !== 0xff)) {
+            _context.next = 3;
+            break;
+          }
+          throw new Error('RC-S330: invalid ACK');
+        case 3:
+          _context.next = 4;
+          return withTimeout(receive(device, claimed.endpointIn, 255), RESPONSE_TIMEOUT$1);
+        case 4:
+          resp = _context.sent;
+          respPayload = parsePasoriFrame(resp);
+          if (respPayload) {
+            _context.next = 5;
+            break;
+          }
+          throw new Error('RC-S330: invalid response frame');
+        case 5:
+          return _context.abrupt("return", respPayload);
+        case 6:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function transceive(_x, _x2, _x3) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+/**
+ * デバイスを開いてインターフェイスを claim し、RF をオンにして通信情報を返す。
+ * @param {USBDevice} device - 対象デバイス
+ * @returns {Promise<object>} interfaceNumber / endpointIn / endpointOut
+ */
+var setup$1 = /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee2(device) {
+    var configuration, confValue, usbInterface, claimed;
+    return _regeneratorRuntime.wrap(function (_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          configuration = device.configurations[0];
+          confValue = configuration.configurationValue || 1;
+          usbInterface = configuration.interfaces[0];
+          claimed = {
+            interfaceNumber: usbInterface.interfaceNumber,
+            endpointIn: getBulkEndpoint(usbInterface, 'in').endpointNumber,
+            endpointOut: getBulkEndpoint(usbInterface, 'out').endpointNumber
+          };
+          _context2.next = 1;
+          return device.open();
+        case 1:
+          _context2.next = 2;
+          return device.selectConfiguration(confValue);
+        case 2:
+          _context2.next = 3;
+          return device.claimInterface(claimed.interfaceNumber);
+        case 3:
+          _context2.next = 4;
+          return transceive$1(device, claimed, RF_ANTENNA_ON);
+        case 4:
+          return _context2.abrupt("return", claimed);
+        case 5:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  }));
+  return function setup(_x4) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+/**
+ * FeliCa ポーリングを行い IDm を読み取る。
+ * @param {USBDevice} device - 対象デバイス
+ * @param {object} claimed - setup() が返した通信情報
+ * @returns {Promise<string>} IDm の 16 進文字列 (カードがなければ空文字列)
+ */
+var readIdm$1 = /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee3(device, claimed) {
+    var resp, _t;
+    return _regeneratorRuntime.wrap(function (_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
+        case 0:
+          _context3.prev = 0;
+          _context3.next = 1;
+          return transceive$1(device, claimed, LIST_PASSIVE_TARGET_FELICA);
+        case 1:
+          resp = _context3.sent;
+          _context3.next = 4;
+          break;
+        case 2:
+          _context3.prev = 2;
+          _t = _context3["catch"](0);
+          _context3.next = 3;
+          return send(device, claimed.endpointOut, PASORI_ACK).catch(function () {});
+        case 3:
+          console.log('RC-S330 polling:', _t.message);
+          return _context3.abrupt("return", '');
+        case 4:
+          if (!(resp[0] !== 0xd5 || resp[1] !== 0x4b || (resp[2] || 0) < 1 || resp[5] !== 0x01)) {
+            _context3.next = 5;
+            break;
+          }
+          return _context3.abrupt("return", '');
+        case 5:
+          return _context3.abrupt("return", bytesToHex(resp.slice(6, 14)));
+        case 6:
+        case "end":
+          return _context3.stop();
+      }
+    }, _callee3, null, [[0, 2]]);
+  }));
+  return function readIdm(_x5, _x6) {
+    return _ref3.apply(this, arguments);
+  };
+}();
+var s330Driver = {
+  productIds: productIds$1,
+  setup: setup$1,
+  readIdm: readIdm$1
+};
+
+var PRODUCT_ID_S310 = 0x006c;
+var PRODUCT_ID_S320 = 0x01bb;
+var productIds = [PRODUCT_ID_S310, PRODUCT_ID_S320];
+
+// カード不在時などに応答待ちで固まらないようにするタイムアウト (ms)
+var RESPONSE_TIMEOUT = 1500;
+
+// 初期化コマンド列 (libpafe の pasori_init と同じ。各コマンド後に応答を 1 回読む)
+var S310_INIT_COMMANDS = [[0x54]];
+var S320_INIT_COMMANDS = [[0x62, 0x01, 0x82], [0x62, 0x02, 0x80, 0x81], [0x62, 0x22, 0x80, 0xcc, 0x81, 0x88], [0x62, 0x02, 0x80, 0x81], [0x62, 0x02, 0x82, 0x87], [0x62, 0x21, 0x25, 0x58], [0x5a, 0x80]];
+
+// FeliCa ポーリング: 0x5C <len+1> <cmd=00 syscode=FFFF RFU=00 timeslot=00>
+var FELICA_POLLING = [0x5c, 0x06, 0x00, 0xff, 0xff, 0x00, 0x00];
+
+/**
+ * フレームを EP0 へのベンダーコントロール転送で送信する。
+ * @param {USBDevice} device - 対象デバイス
+ * @param {Array<number>} frame - 送信フレーム
+ */
+var controlSend = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee(device, frame) {
+    return _regeneratorRuntime.wrap(function (_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 1;
+          return device.controlTransferOut({
+            requestType: 'vendor',
+            recipient: 'device',
+            request: 0x00,
+            value: 0x0000,
+            index: 0x0000
+          }, new Uint8Array(frame));
+        case 1:
+          _context.next = 2;
+          return sleep(10);
+        case 2:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function controlSend(_x, _x2) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+/**
+ * コマンドを送信し、ACK と応答フレームを受けてペイロードを返す。
+ * @param {USBDevice} device - 対象デバイス
+ * @param {object} claimed - setup() が返した通信情報
+ * @param {Array<number>} payload - コマンド本体
+ * @returns {Promise<Array<number>>} 応答ペイロード
+ */
+var transceive = /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee2(device, claimed, payload) {
+    var ack, resp, respPayload;
+    return _regeneratorRuntime.wrap(function (_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 1;
+          return controlSend(device, buildPasoriFrame(payload));
+        case 1:
+          _context2.next = 2;
+          return withTimeout(receive(device, claimed.endpointIn, 64), RESPONSE_TIMEOUT);
+        case 2:
+          ack = _context2.sent;
+          if (!(ack.length !== 6 || ack[4] !== 0xff)) {
+            _context2.next = 3;
+            break;
+          }
+          throw new Error('RC-S320: invalid ACK');
+        case 3:
+          _context2.next = 4;
+          return withTimeout(receive(device, claimed.endpointIn, 255), RESPONSE_TIMEOUT);
+        case 4:
+          resp = _context2.sent;
+          respPayload = parsePasoriFrame(resp);
+          if (respPayload) {
+            _context2.next = 5;
+            break;
+          }
+          throw new Error('RC-S320: invalid response frame');
+        case 5:
+          return _context2.abrupt("return", respPayload);
+        case 6:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  }));
+  return function transceive(_x3, _x4, _x5) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+/**
+ * デバイスを開いてインターフェイスを claim し、初期化コマンドを実行して
+ * 通信情報を返す。
+ * @param {USBDevice} device - 対象デバイス
+ * @returns {Promise<object>} interfaceNumber / endpointIn
+ */
+var setup = /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee3(device) {
+    var configuration, confValue, usbInterface, interruptIn, claimed, initCommands, _i, _initCommands, command;
+    return _regeneratorRuntime.wrap(function (_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
+        case 0:
+          configuration = device.configurations[0];
+          confValue = configuration.configurationValue || 1;
+          usbInterface = configuration.interfaces[0];
+          interruptIn = usbInterface.alternate.endpoints.find(function (e) {
+            return e.direction === 'in' && e.type === 'interrupt';
+          });
+          claimed = {
+            interfaceNumber: usbInterface.interfaceNumber,
+            // libpafe のデフォルトは 0x81 (エンドポイント番号 1)
+            endpointIn: interruptIn ? interruptIn.endpointNumber : 1
+          };
+          _context3.next = 1;
+          return device.open();
+        case 1:
+          _context3.next = 2;
+          return device.selectConfiguration(confValue);
+        case 2:
+          _context3.next = 3;
+          return device.claimInterface(claimed.interfaceNumber);
+        case 3:
+          initCommands = device.productId === PRODUCT_ID_S310 ? S310_INIT_COMMANDS : S320_INIT_COMMANDS;
+          _i = 0, _initCommands = initCommands;
+        case 4:
+          if (!(_i < _initCommands.length)) {
+            _context3.next = 6;
+            break;
+          }
+          command = _initCommands[_i];
+          _context3.next = 5;
+          return transceive(device, claimed, command);
+        case 5:
+          _i++;
+          _context3.next = 4;
+          break;
+        case 6:
+          return _context3.abrupt("return", claimed);
+        case 7:
+        case "end":
+          return _context3.stop();
+      }
+    }, _callee3);
+  }));
+  return function setup(_x6) {
+    return _ref3.apply(this, arguments);
+  };
+}();
+
+/**
+ * FeliCa ポーリングを行い IDm を読み取る。
+ * @param {USBDevice} device - 対象デバイス
+ * @param {object} claimed - setup() が返した通信情報
+ * @returns {Promise<string>} IDm の 16 進文字列 (カードがなければ空文字列)
+ */
+var readIdm = /*#__PURE__*/function () {
+  var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime.mark(function _callee4(device, claimed) {
+    var resp, _t;
+    return _regeneratorRuntime.wrap(function (_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.prev = 0;
+          _context4.next = 1;
+          return transceive(device, claimed, FELICA_POLLING);
+        case 1:
+          resp = _context4.sent;
+          _context4.next = 3;
+          break;
+        case 2:
+          _context4.prev = 2;
+          _t = _context4["catch"](0);
+          console.log('RC-S320 polling:', _t.message);
+          return _context4.abrupt("return", '');
+        case 3:
+          if (!(resp[0] !== 0x5d || resp[2] !== 0x01)) {
+            _context4.next = 4;
+            break;
+          }
+          return _context4.abrupt("return", '');
+        case 4:
+          return _context4.abrupt("return", bytesToHex(resp.slice(3, 11)));
+        case 5:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, null, [[0, 2]]);
+  }));
+  return function readIdm(_x7, _x8) {
+    return _ref4.apply(this, arguments);
+  };
+}();
+var s320Driver = {
   productIds: productIds,
   setup: setup,
   readIdm: readIdm
@@ -1154,9 +1630,10 @@ var SONY_VENDOR_ID = 0x054c;
 /**
  * 対応リーダーのドライバ一覧。
  * 新機種対応はドライバモジュールを追加してここに登録する。
- * (RC-S320: 0x01bb / RC-S330: 0x02e1 は通信プロトコル未実装のため対象外)
+ * (RC-S310/S320/S330 はレガシーデバイスのため Windows では動作しない。
+ *  macOS / Android の Chrome 系ブラウザで利用可能)
  */
-var drivers = [s380Driver, s300Driver];
+var drivers = [s380Driver, s300Driver, s330Driver, s320Driver];
 
 /**
  * requestDevice() 用のフィルター。対応機種の productId だけを列挙する。
@@ -1188,7 +1665,7 @@ var findDriver = function findDriver(productId) {
  */
 var nfcDevices = [];
 var deviceOpening = false;
-var pasorichVersion = 'PaSoRich 2.1(2607)';
+var pasorichVersion = 'PaSoRich 2.2(2607)';
 
 /**
  * Formatter which is used for translation.

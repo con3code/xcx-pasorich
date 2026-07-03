@@ -1,10 +1,11 @@
 /*
 //
 // PaSoRich for Xcratch
-// 20260703 - 2.1(2607)
+// 20260703 - 2.2(2607)
 //
-// SONY PaSoRi (RC-S380 / RC-S300) から FeliCa の IDm を WebUSB で読み取る。
-// リーダー機種ごとの通信処理は s380-driver.js / s300-driver.js に分離。
+// SONY PaSoRi (RC-S380 / RC-S300 / RC-S330 / RC-S320 / RC-S310) から
+// FeliCa の IDm を WebUSB で読み取る。
+// リーダー機種ごとの通信処理は s380-driver.js などのドライバモジュールに分離。
 //
 */
 
@@ -16,15 +17,18 @@ import blockIcon from './pasorich_icon.png';
 
 import s380Driver from './s380-driver';
 import s300Driver from './s300-driver';
+import s330Driver from './s330-driver';
+import s320Driver from './s320-driver';
 
 const SONY_VENDOR_ID = 0x054c;
 
 /**
  * 対応リーダーのドライバ一覧。
  * 新機種対応はドライバモジュールを追加してここに登録する。
- * (RC-S320: 0x01bb / RC-S330: 0x02e1 は通信プロトコル未実装のため対象外)
+ * (RC-S310/S320/S330 はレガシーデバイスのため Windows では動作しない。
+ *  macOS / Android の Chrome 系ブラウザで利用可能)
  */
-const drivers = [s380Driver, s300Driver];
+const drivers = [s380Driver, s300Driver, s330Driver, s320Driver];
 
 /**
  * requestDevice() 用のフィルター。対応機種の productId だけを列挙する。
@@ -48,7 +52,7 @@ const findDriver = productId => drivers.find(d => d.productIds.includes(productI
 const nfcDevices = [];
 let deviceOpening = false;
 
-const pasorichVersion = 'PaSoRich 2.1(2607)';
+const pasorichVersion = 'PaSoRich 2.2(2607)';
 
 
 /**
